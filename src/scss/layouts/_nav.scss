@@ -1,0 +1,17 @@
+nav.nav {
+  //   border: 1px solid red;
+  display: flex;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  ul {
+    // border: 1px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      padding: 1rem;
+    }
+  }
+}

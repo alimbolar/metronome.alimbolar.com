@@ -2,12 +2,13 @@ header {
   width: 100%;
   height: var(--header-height-mobile);
   background: white;
-  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
   padding: 0 1rem;
   display: flex;
   justify-content: space-between;
   position: fixed;
-  top: 0;
+  bottom: 0;
+  z-index: 100;
 
   .logo {
     width: var(--header-height-mobile);

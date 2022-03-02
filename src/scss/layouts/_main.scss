@@ -1,6 +1,8 @@
 main {
   position: fixed;
-  top: var(--header-height-mobile);
+  // top: var(--header-height-mobile);
+  top: 0;
+
   //   border: 10px solid red;
   width: 100%;
   //   height: 100%;
@@ -33,6 +35,10 @@ main {
     overflow: hidden;
 
     background: grey;
+
+    img {
+      filter: grayscale(100%);
+    }
     // flex-basis: 1 0 100%;
     // padding: 3rem;
   }
@@ -40,7 +46,8 @@ main {
   &__content {
     padding: 2rem;
     font-family: "Lato", sans-serif;
-    font-weight: 100;
+    font-weight: 300;
+    color: var(--blue);
     // background: pink;
     height: 100%;
     display: flex;
@@ -61,6 +68,7 @@ main {
 
   &__text {
     font-size: 1rem;
+    color: gray;
     p {
       margin: 1rem;
     }

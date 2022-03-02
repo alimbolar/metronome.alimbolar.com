@@ -2,12 +2,15 @@
 
 :root {
   --header-height-mobile: 5rem;
+  --orange: orange;
+  --blue: darkblue;
 }
 
 html {
   box-sizing: border-box;
   // height: 100%;
   font-family: "Lato", sans-serif;
+  font-weight: 300;
 }
 
 *,
@@ -16,6 +19,7 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: inherit;
+
 }
 
 img {
