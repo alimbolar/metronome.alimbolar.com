@@ -29,6 +29,10 @@ main {
   align-items: center;
   // padding-top: 0.5rem;
 
+  &.hidden {
+    display: none;
+  }
+
   &__image {
     width: 100%;
     height: 100%;
@@ -71,6 +75,132 @@ main {
     color: gray;
     p {
       margin: 1rem;
+    }
+  }
+}
+
+.tools {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: calc(100vh - var(--header-height-mobile));
+
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+
+  &.hidden {
+    display: none;
+  }
+
+  .tool {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    figure {
+      width: 70%;
+
+      img {
+        border: 1px solid var(--blue);
+        background: white;
+        padding: 0.1rem;
+        // height: max-content;
+      }
+
+      figcaption {
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Lato", sans-serif;
+        font-weight: 300;
+        font-size: 0.7rem;
+      }
+    }
+  }
+}
+
+.projects {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: calc(100vh - var(--header-height-mobile));
+  padding-top: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  h1 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+  }
+
+  &.hidden {
+    display: none;
+  }
+
+  .project {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+
+    width: 100%;
+    padding: 0 1rem;
+
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: flex-start;
+
+    &__title {
+      font-size: 1.2rem;
+      color: var(--blue);
+      padding: 0.2rem 0;
+    }
+    &__description {
+      font-size: 0.8rem;
+      color: gray;
+      padding: 0.2rem 0;
+    }
+  }
+
+  .project__image {
+    &-container {
+      // display: grid;
+      background: yellow;
+      width: 100%;
+      // height: 100%;
+      border: 1px solid red;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+      .project__image-desktop {
+        width: 100%;
+        height: 14rem;
+        figure {
+          width: 100%;
+          height: 100%;
+          text-align: center;
+        }
+      }
+      .project__image-mobile {
+        width: 100%;
+        height: 16rem;
+        figure {
+          width: 50%;
+          height: 100%;
+        }
+      }
     }
   }
 }
