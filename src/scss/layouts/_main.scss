@@ -107,12 +107,13 @@ main {
     display: grid;
     grid-auto-flow: row;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, minmax(2rem, 20%));
+    grid-template-rows: repeat(4, minmax(1rem, 15%));
     justify-items: center;
     align-items: center;
     justify-content: center;
-    align-content: space-between;
+    align-content: center;
     padding: 1rem 0;
+    gap: 1rem;
   }
 
   .tool {
