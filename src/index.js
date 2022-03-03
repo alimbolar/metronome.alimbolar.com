@@ -1,5 +1,7 @@
 import "./style.scss";
 
+// NAVIGATION LINKS
+
 const sections = document.querySelectorAll("main>section");
 console.log(sections);
 const nav = document.querySelector(".nav");
@@ -29,4 +31,50 @@ function displayView(e) {
     link.classList.remove("active");
   });
   targetlink.classList.add("active");
+}
+
+// MODAL
+
+const tools = document.querySelector(".tools");
+const overlay = document.querySelector(".overlay");
+
+console.log(tools);
+
+tools.addEventListener("click", displayModal);
+
+function displayModal(e) {
+  e.preventDefault();
+
+  const clickedTool = e.target.closest(".tool");
+
+  console.log(clickedTool);
+
+  if (!clickedTool) return;
+
+  const modalName = clickedTool.dataset.modal;
+
+  console.log(modalName);
+
+  const modal = document.querySelector(`.${modalName}.hidden`);
+  modal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+}
+
+const closeButtons = document.querySelectorAll(".close");
+
+closeButtons.forEach((item) =>
+  item.addEventListener("click", closeActiveModal)
+);
+
+overlay.addEventListener("click", closeActiveModal);
+// closeButtons.foaddEventListener("click", closeActiveModal);
+
+function closeActiveModal() {
+  overlay.classList.add("hidden");
+  const footer = document.querySelector("footer");
+
+  const allModals = footer.querySelectorAll(".modal");
+  overlay.classList.add("hidden");
+
+  allModals.forEach((modal) => modal.classList.add("hidden"));
 }

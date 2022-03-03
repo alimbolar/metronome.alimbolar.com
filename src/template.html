@@ -72,49 +72,49 @@
         <h1>Tools I Use</h1>
         <p>Click to know more.</p>
         <div class="tools__container">
-          <article class="tool">
+          <article class="tool" data-modal="figma">
             <figure>
               <img src="/public/assets/images/figma-logo.png" alt="" />
               <figcaption>Figma</figcaption>
             </figure>
           </article>
-          <article class="tool">
+          <article class="tool" data-modal="codepen">
             <figure>
               <img src="/public/assets/images/codepen-logo.png" alt="" />
               <figcaption>Codepen</figcaption>
             </figure>
           </article>
-          <article class="tool">
+          <article class="tool" data-modal="javascript">
             <figure>
               <img src="/public/assets/images/javascript-logo.png" alt="" />
               <figcaption>Javascript</figcaption>
             </figure>
           </article>
-          <article class="tool">
+          <article class="tool" data-modal="nodejs">
             <figure>
               <img src="/public/assets/images/nodejs-logo.jpg" alt="" />
               <figcaption>NodeJS</figcaption>
             </figure>
           </article>
-          <article class="tool">
+          <article class="tool" data-modal="mongodb">
             <figure>
               <img src="/public/assets/images/mongodb-logo.jpg" alt="" />
               <figcaption>MongoDB</figcaption>
             </figure>
           </article>
-          <article class="tool">
+          <article class="tool" data-modal="wordpress">
             <figure>
               <img src="/public/assets/images/wordpress-logo.png" alt="" />
               <figcaption>WordPress</figcaption>
             </figure>
           </article>
-          <article class="tool">
+          <article class="tool" data-modal="github">
             <figure>
               <img src="/public/assets/images/github-logo.jpg" alt="" />
               <figcaption>Github</figcaption>
             </figure>
           </article>
-          <article class="tool">
+          <article class="tool" data-modal="google-cloud">
             <figure>
               <img src="/public/assets/images/google-cloud-logo.jpg" alt="" />
               <figcaption>Google Cloud</figcaption>
@@ -151,5 +151,194 @@
         </article>
       </section>
     </main>
+
+    <footer>
+      <div class="overlay hidden"></div>
+      <!-- FIGMA MODAL -->
+      <div class="modal figma hidden">
+        <div class="modal__container">
+          <div class="modal__title">
+            <div class="modal__logo">
+              <figure>
+                <img src="/public/assets/images/figma-logo.png" alt="" />
+              </figure>
+            </div>
+            <h2>Figma</h2>
+            <span>is where everything begins</span>
+          </div>
+
+          <p class="modal__content">
+            Before even a single line is coded, I make sure there’s a visual
+            representation of the idea that needs to be presented. Code is
+            important but code needs direction and if the direction is visual
+            there’s a better chance that the end product will ‘look’ like the
+            way it was intended to.
+          </p>
+        </div>
+        <div class="close">X</div>
+      </div>
+      <!-- CODEPEN MODAL -->
+      <div class="modal codepen hidden">
+        <div class="modal__container">
+          <div class="modal__title">
+            <div class="modal__logo">
+              <figure>
+                <img src="/public/assets/images/codepen-logo.png" alt="" />
+              </figure>
+            </div>
+            <h2>Codepen</h2>
+            <span>is my playground for frontend development</span>
+          </div>
+
+          <p class="modal__content">
+            It’s almost like a children’s playground. It’s fun and there’s
+            constant learning while you are having fun. The toys/tools are
+            always accessible and it’s where most of my frontend
+            experimentations are done before the code moves to the final
+            product.
+          </p>
+        </div>
+        <div class="close">X</div>
+      </div>
+      <!-- JAVASCRIPT MODAL -->
+      <div class="modal javascript hidden">
+        <div class="modal__container">
+          <div class="modal__title">
+            <div class="modal__logo">
+              <figure>
+                <img src="/public/assets/images/javascript-logo.png" alt="" />
+              </figure>
+            </div>
+            <h2>JAvascript</h2>
+            <span>is heaven</span>
+          </div>
+
+          <p class="modal__content">
+            I am in love with javascript and it’s my preferred language for
+            coding. The reasons are many which are based on personal tastes but
+            from a productivity perspective it allows me the flexibility to use
+            the same language on the frontend and the backend (in case of a
+            NodeJS server). It’s something I am trying to get better at everyday
+            as there’s always something new to learn and discover.
+          </p>
+        </div>
+        <div class="close">X</div>
+      </div>
+      <!-- NODEJS MODAL -->
+      <div class="modal nodejs hidden">
+        <div class="modal__container">
+          <div class="modal__title">
+            <div class="modal__logo">
+              <figure>
+                <img src="/public/assets/images/nodejs-logo.jpg" alt="" />
+              </figure>
+            </div>
+            <h2>NodeJS</h2>
+            <span>is a godsend</span>
+          </div>
+
+          <p class="modal__content">
+            When I discovered the ease of using NodeJS and the power it is
+            capable of, it was love at first ‘byte’. With all the tools
+            available and the fact that it runs on Javascript, it’s my preferred
+            server technology.
+          </p>
+        </div>
+        <div class="close">X</div>
+      </div>
+      <!-- MONGODB MODAL -->
+      <div class="modal mongodb hidden">
+        <div class="modal__container">
+          <div class="modal__title">
+            <div class="modal__logo">
+              <figure>
+                <img src="/public/assets/images/mongodb-logo.jpg" alt="" />
+              </figure>
+            </div>
+            <h2>MongoDB</h2>
+            <span>will find({}) it!</span>
+          </div>
+
+          <p class="modal__content">
+            Having used SQL in the past, discovering a NOSQL solution that’s
+            super quick and super efficient was exciting. But when you realise
+            how well it works with Javascript, the search ends, right there!
+            Easy to start with, quick to deploy and extremely scalable, it’s my
+            favourite database technology.
+          </p>
+        </div>
+        <div class="close">X</div>
+      </div>
+      <!-- WORDPRESS MODAL -->
+      <div class="modal wordpress hidden">
+        <div class="modal__container">
+          <div class="modal__title">
+            <div class="modal__logo">
+              <figure>
+                <img src="/public/assets/images/wordpress-logo.png" alt="" />
+              </figure>
+            </div>
+            <h2>Wordpress</h2>
+            <span>is changing for the better!</span>
+          </div>
+
+          <p class="modal__content">
+            Wordpress, undoubtedly the world’s favourite CMS, has seen some
+            recent changes and it’s introduced Block Editing which allows my
+            favourite 3 tools to come together HTML, CSS and yes, Javascript! So
+            since WordPress 5.9, I’ve been taking a keen interest in developing
+            sites with WordPress as for a lot of people who want the frontend
+            and backend to be bundled into one single application, it is
+            probably the best choice there is today.
+          </p>
+        </div>
+        <div class="close">X</div>
+      </div>
+      <!-- GITHUB MODAL -->
+      <div class="modal github hidden">
+        <div class="modal__container">
+          <div class="modal__title">
+            <div class="modal__logo">
+              <figure>
+                <img src="/public/assets/images/github-logo.jpg" alt="" />
+              </figure>
+            </div>
+            <h2>Github</h2>
+            <span>is 'home' for my code</span>
+          </div>
+
+          <p class="modal__content">
+            Github, which is now owned by Microsoft, is home to my code, like it
+            is to every other developer out there. All my projects and code
+            reside here. Some of them are private repositories, for obvious
+            reasons, while some of my projects are public for collaboration with
+            other developers out in the open source world.
+          </p>
+        </div>
+        <div class="close">X</div>
+      </div>
+      <!-- GOOGLE CLOUD MODAL -->
+      <div class="modal google-cloud hidden">
+        <div class="modal__container">
+          <div class="modal__title">
+            <div class="modal__logo">
+              <figure>
+                <img src="/public/assets/images/google-cloud-logo.jpg" alt="" />
+              </figure>
+            </div>
+            <h2>Google Cloud</h2>
+            <span>is where it gets 'served'</span>
+          </div>
+
+          <p class="modal__content">
+            There's plenty of resources for hosting out there like Digital
+            Ocean, Netlify, WPMU and I have good experience with all of these.
+            Of late, I've begun to depend on Google Cloud Servers for most of my
+            hosting and am beginning to enjoy the experience.
+          </p>
+        </div>
+        <div class="close">X</div>
+      </div>
+    </footer>
   </body>
 </html>
