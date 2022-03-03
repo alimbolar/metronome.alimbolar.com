@@ -3,6 +3,7 @@ import "./style.scss";
 const sections = document.querySelectorAll("main>section");
 console.log(sections);
 const nav = document.querySelector(".nav");
+const navLinks = nav.querySelectorAll(".nav__item");
 
 console.log(nav);
 
@@ -23,4 +24,9 @@ function displayView(e) {
   console.log(targetSection);
 
   targetSection.classList.remove("hidden");
+
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
+  });
+  targetlink.classList.add("active");
 }

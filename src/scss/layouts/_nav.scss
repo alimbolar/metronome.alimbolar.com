@@ -4,6 +4,7 @@ nav.nav {
   text-transform: uppercase;
   font-family: "Lato", sans-serif;
   font-weight: 300;
+  color: gray;
   ul {
     // border: 1px solid green;
     display: flex;
@@ -12,6 +13,11 @@ nav.nav {
 
     li {
       padding: 1rem;
+
+      &.nav__item.active {
+        color: var(--blue);
+        border-bottom: 1px solid var(--orange);
+      }
     }
   }
 }
