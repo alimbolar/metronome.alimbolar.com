@@ -25,8 +25,9 @@
       </nav> -->
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__item">Tools</li>
-          <li class="nav__item">Projects</li>
+          <li class="nav__item" data-link="home">Home</li>
+          <li class="nav__item" data-link="tools">Tools</li>
+          <li class="nav__item" data-link="projects">Projects</li>
         </ul>
       </nav>
       <!-- <div class="menu">
@@ -37,7 +38,7 @@
     </header>
 
     <main>
-      <section class="hero hidden">
+      <section class="hero home hidden">
         <div class="hero__image">
           <figure>
             <img src="/public/assets/images/metronome-wide.jpg" alt="" />
@@ -120,24 +121,27 @@
       <section class="projects">
         <h1>Projects in 2022</h1>
         <article class="project">
-          <div class="project__title">Bali Super Host</div>
-          <div class="project__description">
-            A website in wordpress for company that rents out luxury villas and
-            connects to a channel manager to multiple platforms
-          </div>
-          <div class="project__image-container">
+          <div class="project__container">
+            <h2 class="project__title">Bali Super Host</h2>
+            <p class="project__description">
+              A website in wordpress for company that rents out luxury villas
+              and connects to a channel manager to multiple platforms
+            </p>
             <div class="project__image-desktop">
               <figure>
-                <!-- <img src="" alt="" /> -->
+                <img
+                  src="/public/assets/images/screencapture-balisuperhost-desktop.png"
+                  alt=""
+                />
                 <figcaption></figcaption>
               </figure>
             </div>
-            <div class="project__image-mobile">
+            <!-- <div class="project__image-mobile">
               <figure>
-                <!-- <img src="" alt="" /> -->
+                <img src="" alt="" />
                 <figcaption></figcaption>
               </figure>
-            </div>
+            </div> -->
           </div>
         </article>
       </section>
