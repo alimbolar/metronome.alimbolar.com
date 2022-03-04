@@ -2,8 +2,8 @@
 
 :root {
   --header-height-mobile: 5rem;
-  --orange: orange;
-  --blue: darkblue;
+  --orange: hsl(36, 100%, 60%);
+  --blue: hsl(240, 100%, 12%);
 }
 
 html {
@@ -19,7 +19,6 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: inherit;
-
 }
 
 img {
