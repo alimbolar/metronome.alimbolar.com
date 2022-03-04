@@ -12,7 +12,13 @@ nav.nav {
     align-items: center;
 
     li {
-      padding: 1rem;
+      padding: 0.5rem;
+      font-size: 0.8rem;
+
+      @media (min-width: 50rem) {
+        padding: 1rem;
+        font-size: 1rem;
+      }
 
       &.nav__item.active {
         color: var(--blue);
