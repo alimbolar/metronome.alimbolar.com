@@ -3,9 +3,21 @@ import "./style.scss";
 // LOGO
 const logo = document.querySelector(".logo");
 
-logo.addEventListener("click", function () {
-  window.open("https://metronome-alimbolar.netlify.app");
-});
+// logo.addEventListener("click", function () {
+//   window.open("https://metronome-alimbolar.netlify.app");
+// });
+
+logo.addEventListener("click", displayHomeView);
+
+function displayHomeView() {
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
+  });
+  sections.forEach((section) => section.classList.add("hidden"));
+  const homeView = document.querySelector("main>section.home");
+  homeView.classList.remove("hidden");
+  // console.log(homeView);
+}
 
 // NAVIGATION LINKS
 
