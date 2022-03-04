@@ -49,11 +49,16 @@ main {
     // margin: auto;
     overflow: hidden;
 
-    background: grey;
+    background: white;
 
-    // img {
-    //   filter: grayscale(100%);
-    // }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      // filter: grayscale(100%);
+      width: 100%;
+    }
     // flex-basis: 1 0 100%;
     // padding: 3rem;
   }
