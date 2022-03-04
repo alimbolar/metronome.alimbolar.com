@@ -3,9 +3,9 @@ import "./style.scss";
 // LOGO
 const logo = document.querySelector(".logo");
 
-logo.addEventListener("click", function () {
-  window.open("https://alimbolar.netlify.app");
-});
+// logo.addEventListener("click", function () {
+//   window.open("https://alimbolar.netlify.app");
+// });
 
 // NAVIGATION LINKS
 

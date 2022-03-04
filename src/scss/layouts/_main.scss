@@ -168,10 +168,18 @@ main {
     justify-content: center;
     align-items: center;
 
+    &:hover figure {
+      transform: scale(1.1);
+      img {
+        border: 1px solid var(--orange);
+      }
+    }
+
     figure {
       width: 50%;
       height: 100%;
       background: white;
+      transition: transform 0.3s;
 
       @media (min-width: 50rem) {
         width: 70%;

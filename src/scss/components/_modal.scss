@@ -4,7 +4,7 @@
   left: 0;
   bottom: 0;
   right: 0;
-  background: gray;
+  background: hsla(0, 100%, 0%, 0.8);
   z-index: 2000;
 
   &.hidden {
@@ -18,15 +18,30 @@
   }
 
   z-index: 2001;
+  overflow-y: scroll;
   // width: 90%;
   // height: 90%;
   background: white;
   position: absolute;
-  top: 2rem;
-  left: 2rem;
-  bottom: 2rem;
-  right: 2rem;
+  // top: 2rem;
+  // left: 2rem;
+  // bottom: 2rem;
+  // right: 2rem;
+  width: 80%;
+  height: 80%;
   border-radius: 2rem;
+  margin: auto;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: 50rem) {
+    // position: absolute;
+    width: 30%;
+    height: 50%;
+    // margin: auto;
+  }
 
   &__container {
     position: relative;
